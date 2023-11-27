@@ -1,0 +1,108 @@
+Tolong bantu aku untuk membuat program ini:
+perhatian:
+- Progran akan terus berulang sampai user memasukan opsi "5" lalu opsi "y"
+- perhatikan instruksi/persyaratan dan tampilan program yang sudah dijabarkan dibawah
+- "//" adalah bentuk instruksi dari saya, jadi bukan termasuk tampilan program
+
+// berikut adalah tampilan halaman utama program, saat dijalankan
+   =========BUKU TELEPON=========
+   -Home
+
+
+  *------MENU PILIHAN------*
+1. Tampilkan Data Buku Telepon // untuk menu pilihan 1, terdapat 2 opsi lagi. 1 untuk tambahkan data, 2 untuk hapus data
+2. Cari nama -> telepon
+3. Cari telepon -> nama
+4. Credit (anggota kelompok)
+5. Keluar
+
+Masukan pilihan anda = <input> // memasukan pilhan dengan angka
+
+
+// berikut adalah tampilan ketika pada halaman utama user memasukan angka 1. Halaman ini bertujuan untuk melihat data apa saja yang sudah dimasukan, dan menampilkan "Kosong" saat belum ada data yang dimasukkan. Pada Halaman ini juga user dapat melakukan tambahkan data (opsi 1) dan hapus data (opsi 2). Ketika opsi 1 dan 2 selesai dijalankan akan tetap mengarahkan pada halaman ini (halaman Tampilkan Data Buku Telepon)
+   =========BUKU TELEPON=========
+   -Data Buku Telepon
+
+Nama			Telepon
+----------		----------
+DataNama1		083082324432
+DataNama2		083082324433
+
+1. Tambahkan Data
+2. Hapus Data
+3. Kembali ke menu awal
+
+*Pilihan : <input> // memasukan pilihan tambahkan data (1), hapus data (2), atau kembali ke menu awal (3)
+
+// ketika memilih opsi 1 (tambahkan data)
+Masukan nama => <input> // input nama (string)
+Masukan nomor => <input> // input nomor telepon dari pada si nama (nominal 12)
+// setelah itu kembali ke menu ini (menu 1) dan tampilkan
+*Data berhasil dimasukan...
+
+// ketika memilih opsi 2 (hapus data)
+Masukan nama => <input> // input nama (string)
+
+// setelah itu hapus data dan kembali ke menu ini (menu 1) dan tampilkan ini:
+*Data berhasil dihapus... // jika data ditemukan
+*Data tidak ditemukan... // jika data tidak ditemukan
+
+// ketika memilih opsi 3 (kembali ke menu awal), user diarahkan kembali ke menu awal
+
+
+
+
+
+
+// berikut adalah tampilan ketika pada halaman utama user memasukan angka 2. Halaman ini bertujuan untuk mencari data nama yang sudah dimasukan pada halaman 1 (input data telepon), dan memberikan output data nomornya.
+   =========BUKU TELEPON=========
+   -Cari nama
+
+Masukan nama => DataNama1 // contoh kita memasukan inputan DataNama1
+
+*Data ditemukan... // jika data tidak ada, tampilkan "*Data tidak tersedia..."
+DataNama1 = 083082324432 // maka outputnya adalah <inputan = nomor telepon daripada inputan>
+
+*Ingin cari lagi? (y/n) => <input> // memasukan konfirmasi. Jika inputan y/Y, pergi kembali ke pilihan 3 (halaman ini). Jika n/N, pergi ke halaman utama.
+
+
+// berikut adalah tampilan ketika pada halaman utama user memasukan angka 3. Halaman ini bertujuan untuk mencari data nomor yang sudah dimasukan pada halaman 1 (input data telepon), dan memberikan output data nama.
+   =========BUKU TELEPON=========
+   -Cari nama
+
+Masukan nomor => 083082324432 // contoh kita memasukan nomor 083082324432, yaitu nomor dari pada DataNama1.
+
+*Data ditemukan... // jika data tidak ada, tampilkan "*Data tidak tersedia..."
+083082324432 = DataNama1 // maka outputnya adalah <inputan (data nomor) = nama dari nomor telepon yang dimasukan>
+
+*Ingin cari lagi? (y/n) => <input> // memasukan konfirmasi. Jika inputan y/Y, pergi kembali ke pilihan 4 (halaman ini). Jika n/N, pergi ke halaman utama.
+
+
+
+// berikut adalah tampilan ketika pada halaman utama user memasukan angka 4. Halaman ini bertujuan untuk menampilkan nama anggota kelompok yang berupa string, dan opsi untuk melihat source code di internet (github)
+   =========BUKU TELEPON=========
+   -Credit
+
+Anggota Kelompok 5
+--------------------------
+- Anggota 1
+- Anggota 2
+- Anggota 3
+
+Lihat source code - Redirect to GitHub (y/n)
+"n" untuk kembali ke halaman utama => <input>
+/*
+Ketika user memasukan y/Y, maka akan menjalankan program ini:
+```
+const char* url = "https://github.com/yeftakun/Tugas-Database-Tokopedia";
+std::system(("start \"\" \"" + std::string(url) + "\"").c_str());
+```
+Jika user memasukan n/N, maka akan pergi kembali ke halaman utama
+*/
+
+
+// terakhir, ketika pada halaman utama user memasukan angka 5, berikut tampilannya
+   =========BUKU TELEPON=========
+   -Exit
+
+Terminate program? (y/n) => <input> // ketika user memasukan y/Y, maka program akan berakhir, jika memasukan n/N maka program akan mengarahkan user kembali ke halaman utama.
