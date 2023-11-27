@@ -182,7 +182,7 @@ void displayCredit() {
     cin >> choice;
 
     if (choice == 'y' || choice == 'Y') {
-        const char* url = "https://github.com/yeftakun/Tugas-Database-Tokopedia";
+        const char* url = "https://github.com/yeftakun/tugas-strukturdata-searching";
         system(("start \"\" \"" + string(url) + "\"").c_str());
         displayCredit();
     }
