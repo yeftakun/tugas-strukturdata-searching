@@ -1,5 +1,3 @@
-Tolong bantu aku untuk membuat program ini:
-perhatian:
 - Progran akan terus berulang sampai user memasukan opsi "5" lalu opsi "y"
 - perhatikan instruksi/persyaratan dan tampilan program yang sudah dijabarkan dibawah
 - "//" adalah bentuk instruksi dari saya, jadi bukan termasuk tampilan program
