@@ -15,7 +15,7 @@ vector<Contact> contacts;
 
 void displayMainMenu() {
     cout << "=========BUKU TELEPON=========" << endl;
-    cout << "-Home" << endl;
+    cout << ">Home" << endl;
     cout << "\n*------MENU PILIHAN------*" << endl;
     cout << "1. Tampilkan Data Buku Telepon" << endl;
     cout << "2. Cari nama -> telepon" << endl;
@@ -27,7 +27,7 @@ void displayMainMenu() {
 
 void displayContactList() {
     cout << "=========BUKU TELEPON=========" << endl;
-    cout << "-Data Buku Telepon" << endl;
+    cout << ">Data Buku Telepon" << endl;
     if (contacts.empty()) {
         cout << "Kosong" << endl;
     } else {
@@ -166,7 +166,7 @@ void searchByPhone() {
 void displayCredit() {
     system("cls");
     cout << "=========BUKU TELEPON=========" << endl;
-    cout << "-Credit" << endl;
+    cout << ">Credit" << endl;
     cout << "\nAnggota Kelompok 5" << endl;
     cout << "--------------------------" << endl;
     cout << "- YEFTA YOSIA ASYEL\t\t\t220211060372" << endl;
@@ -177,7 +177,7 @@ void displayCredit() {
     cout << "- ANSYE ANGELINA LENSEHE\t\t220211060318" << endl;
     cout << "- FEYKHA NURULILLAH AMALIA KOEM\t\t220211060326" << endl;
     cout << "- MARVELL YEHEZKIEL PALENEWEN\t\t220211060335" << endl;
-    cout << "\nLihat source code - Redirect to GitHub (y/n=kembali) ";
+    cout << "\nLihat source code - Redirect to GitHub (y/n=kembali) => ";
     char choice;
     cin >> choice;
 
@@ -243,7 +243,6 @@ int main() {
                     return 0;
                 }
                 break;
-
             default:
                 cout << "\n*Pilihan tidak valid. Silakan coba lagi." << endl;
         }
