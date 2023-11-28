@@ -1,11 +1,11 @@
 # TUGAS STRUKTUR DATA - SEARCHING
-<div align="center">
+<div align="left">
 <h2>Demo</h2>
 </div>
 
 ![DEMO](/ignore-this/demo.gif)
 
-<div align="center">
+<div align="Left">
 <h2>Overview</h2>
 </div>
 
