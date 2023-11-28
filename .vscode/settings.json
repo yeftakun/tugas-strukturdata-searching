@@ -2,7 +2,7 @@
     "editor.fontSize": 14,
     "editor.minimap.enabled": false,
     "workbench.colorTheme": "Default Dark Modern",
-    "files.autoSave": "afterDelay",
+    "files.autoSave": "off",
     "terminal.integrated.fontSize": 18,
     "files.associations": {
         "*.rmd": "markdown",

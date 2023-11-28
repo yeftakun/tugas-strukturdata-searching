@@ -13,6 +13,7 @@ struct Contact {
 
 vector<Contact> contacts;
 
+// MENU UTAMA
 void displayMainMenu() {
     cout << "=========BUKU TELEPON=========" << endl;
     cout << ">Home" << endl;
@@ -25,6 +26,7 @@ void displayMainMenu() {
     cout << "\nMasukan pilihan anda = ";
 }
 
+// OPSI 1
 void displayContactList() {
     cout << "=========BUKU TELEPON=========" << endl;
     cout << ">Data Buku Telepon" << endl;
@@ -55,6 +57,7 @@ void displayContactList() {
     cout << "\nPilihan : ";
 }
 
+// OPSI 1 > OPSI 1
 void addContact() {
     Contact newContact;
     cout << "Masukan nama => ";
@@ -68,6 +71,7 @@ void addContact() {
     cout << "\n*Data berhasil dimasukan...\n" << endl;
 }
 
+// OPSI 1 > OPSI 2
 void deleteContact() {
     string nameToDelete;
     cout << "Masukan nama => ";
@@ -87,6 +91,7 @@ void deleteContact() {
     }
 }
 
+// OPSI 2
 void searchByName() {
     system("cls");
     string nameToSearch;
@@ -126,7 +131,7 @@ void searchByName() {
     }
 }
 
-
+// OPSI 3
 void searchByPhone() {
     system("cls");
     string phoneToSearch;
@@ -163,11 +168,12 @@ void searchByPhone() {
     }
 }
 
+// OPSI 4
 void displayCredit() {
     system("cls");
     cout << "=========BUKU TELEPON=========" << endl;
     cout << ">Credit" << endl;
-    cout << "\nAnggota Kelompok 5" << endl;
+    cout << "\nAnggota Kelompok 5 - STRUKTUR DATA" << endl;
     cout << "--------------------------" << endl;
     cout << "- YEFTA YOSIA ASYEL\t\t\t220211060372" << endl;
     cout << "- LEANDRO SEVANYA RUMONDOR\t\t220211060298" << endl;
@@ -175,9 +181,10 @@ void displayCredit() {
     cout << "- BARCA AZABU SEMBENG\t\t\t220211060311" << endl;
     cout << "- BAYU PRAMANA ZULGIHARTO ABDJUL\t220211060312" << endl;
     cout << "- ANSYE ANGELINA LENSEHE\t\t220211060318" << endl;
-    cout << "- FEYKHA NURULILLAH AMALIA KOEM\t\t220211060326" << endl;
+    cout << "- FEYKHA NURULILLAH AMALIAH KOEM\t220211060326" << endl;
     cout << "- MARVELL YEHEZKIEL PALENEWEN\t\t220211060335" << endl;
-    cout << "\nLihat source code - Redirect to GitHub (y/n=kembali) => ";
+    cout << "- JONATHAN CHRISTIAN PANGEMANAN\t\t220211060331" << endl;
+    cout << "\nLihat source code -> GitHub (y/n=kembali) => ";
     char choice;
     cin >> choice;
 
@@ -235,6 +242,7 @@ int main() {
                 displayCredit();
                 break;
 
+            // OPSI 5
             case 5:
                 cout << "\nTerminate program? (y/n) ";
                 char terminateChoice;
